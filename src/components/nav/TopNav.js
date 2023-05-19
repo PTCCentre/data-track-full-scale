@@ -4,14 +4,17 @@ export default function TopNav({children}) {
   return (
         <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light foi-navbar">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand" to="/"> <img src='https://famousclowns.org/wp-content/uploads/2017/11/helmet-of-salvation.png' style={{marginTop:'20px', width:'35px'}}/>
+                    <b  style={{lineHeight:'20px',fontSize:'15px' }}>
+
+                   <span style={{display:'inline-flex'}}>Church <br/>   Quest</span> </b>
                 </Link>
                 
                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <ul className="navbar-nav mr-auto mt-2  mt-lg-0">
                         <li className="nav-item active">
                             <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                         </li>

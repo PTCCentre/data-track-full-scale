@@ -3033,10 +3033,16 @@ display: flex;
 flex-direction: column;
 padding-left: 0;
 margin-bottom: 0;
-list-style: none; }
+list-style: none; 
+}
 .navbar-nav .nav-link {
 padding-right: 0;
 padding-left: 0; }
+.navbar-nav mr-auto mt-2  mt-lg-0{
+  margin-right:10px
+}
+
+
 .navbar-nav .dropdown-menu {
 position: static;
 float: none; }
