@@ -1,20 +1,39 @@
-import React from 'react'
-import './css/Dashnav.css'
-import './css/Dashboard.css'
-import {Link} from 'react-router-dom'
-import teamImage from '../../assets/images/team.svg'
+import { useEffect, useState } from 'react'
+import {useAuth} from '../portal/firebase-config'
+
+import {Link , useNavigate} from 'react-router-dom'
+import { logout } from '../portal/firebase-config'
+import teamImage from '../../assets/images/teams.svg'
 import guest from '../../assets/images/guest.svg'
-import signoutImage from '../../assets/images/sign-out.svg'
-export default function Dashnav() {
+import signoutImage from '../../assets/images/signout.svg'
+export default function Dashnav(handleLogout) {
+const currentUser=useAuth();
+const navigate=useNavigate()
+const [loading, setLoading]=useState(false);
+   
+
+  async function handleLogout(){
+    setLoading(true)
+    try{
+    await logout()
+   }
+   catch {
+       alert('error!')
+   }
+
+   setLoading(false)
+   navigate('/portal')
+
+   }
+
   return (
       <div className='sidebar'>
 
         <div className='sidebar-brand' style={{textAlign:'center'}}>
           <h4><img src='https://famousclowns.org/wp-content/uploads/2017/11/helmet-of-salvation.png' style={{width:'35px'}}/>
- <span> Church <br/> Quest</span></h4>
+                <span> Church <br/> Quest</span></h4>
         </div>
         <br/>     <br/>
-
         <div className='sidebar-menu'> 
            <ul>
             <li>
@@ -33,7 +52,7 @@ export default function Dashnav() {
             </li>
           
             <li>
-              <Link to='/portal'><span ><img src={signoutImage} /></span> <span> Log out</span></Link>
+              <Link to='/portal' onClick={handleLogout}><span ><img src={signoutImage} /></span> <span> Log out</span></Link>
             </li>
 
            </ul>

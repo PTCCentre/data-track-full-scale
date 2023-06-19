@@ -1,3 +1,4 @@
+import firebase from 'firebase/compat/app';
 import {useState, useEffect} from 'react'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -9,15 +10,13 @@ import '@firebase/firestore-compat'
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyACmBmipt6VIE_Xl_-alEW9Jg8ijldNcOE",
-  authDomain: "church-quest.firebaseapp.com",
-  projectId: "church-quest",
-  storageBucket: "church-quest.appspot.com",
-  messagingSenderId: "755043825690",
-  appId: "1:755043825690:web:d385acf142c14ecc8af9a3",
-  measurementId: "G-L2XZD84WHF"
+  apiKey: "AIzaSyCsc2ET0FhO5JQcmIPXL5R99VnMN3iVfRc",
+  authDomain: "church-quest-b3d00.firebaseapp.com",
+  projectId: "church-quest-b3d00",
+  storageBucket: "church-quest-b3d00.appspot.com",
+  messagingSenderId: "209335426786",
+  appId: "1:209335426786:web:8d267ab316308655d308bb"
 };
-
 // Initialize Firebase  
 const app = initializeApp(firebaseConfig);
 const auth=getAuth();
@@ -49,6 +48,13 @@ export function useAuth(){
 	return currentUser;
 }
 
+// initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+//initializes services
+const projectFirestore=firebase.firestore()
+
+export {projectFirestore}
 
 
 
