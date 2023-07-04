@@ -24,7 +24,11 @@ export default function Members() {
   
          useEffect(()=>{
           setLoading(true)
-          const unsub=projectFirestore.collection('membership').onSnapshot((snapshot)=>{
+          
+    
+
+         const unsub=projectFirestore.collection('membership').onSnapshot((snapshot)=>{
+          //
             console.log(snapshot)
             if(snapshot.empty){
                setError('No members to load')
@@ -83,15 +87,16 @@ export default function Members() {
            <main className='main'>
             
                   <div className='cards'>
-                  {loading && <div className='card-single'>
+                  {loading &&
+                  <div className='card-single'>
                     <div>
-                      <h3>Loading Components</h3>
-                       <span>.....</span><br/>
-                  </div>      
+                      <h3>Loading</h3>
+                       <span>Total retained</span><br/>
+                  </div>      0
                   <div>
                     <span  className='member-icon'  > <Link to="#"><img src={membersImage} height='50px'/> </Link></span>
                   </div>
-                </div>}
+                </div> }
 
                      {details.map(detail=>(<div key={detail.id} className='card-single'>
                       <div>
@@ -105,6 +110,7 @@ export default function Members() {
                         <span className='member-icon' > <Link to="#"><img  src={membersImage} height='50px'/> </Link></span>
                       </div>
                     </div>))}
+                    
                     <div className='card-single'>
                     <div>
                       <h3>100</h3>

@@ -14,7 +14,7 @@ export default function Searchbar(){
         <div className='search-wrapper'>
             <form onSubmit={handleSubmit}> 
         <span className='las la-search'></span>
-        <input type='search' placeholder='Search member' onChange={(e)=>setTerm(e.target.value)}/>
+        <input type='search'  placeholder='Search member' onChange={(e)=>setTerm(e.target.value)}/>
         </form>
       </div>
     )

@@ -1,4 +1,5 @@
 import firebase from 'firebase/compat/app';
+import "firebase/compat/database";
 import {useState, useEffect} from 'react'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -49,12 +50,12 @@ export function useAuth(){
 }
 
 // initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const fireDb=firebase.initializeApp(firebaseConfig);
 
 //initializes services
-const projectFirestore=firebase.firestore()
-
-export {projectFirestore}
+const projectFirestore=fireDb.firestore()
+const fireDbRef=fireDb.database().ref()
+export {projectFirestore, fireDbRef}
 
 
 

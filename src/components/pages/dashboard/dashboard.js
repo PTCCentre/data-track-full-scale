@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './css/Dashnav.css'
 import './css/Dashboard.css'
 import { Link, useNavigate } from 'react-router-dom'
-import {useAuth} from '../portal/firebase-config'
+import {fireDbRef, useAuth} from '../portal/firebase-config'
 import { projectFirestore } from '../portal/firebase-config'
 
 import Button from 'react-bootstrap/Button';
@@ -17,7 +17,8 @@ import MemberModal from './Member-modal'
 import Searchbar from './Searchbar'
 
 export default function Dashboard() {
-  const[name,setName]=useState(null)
+  const[firstName,setFirstName]=useState(null)
+  const[lastName,setLastName]=useState(null)
   const[email , setEmail]=useState(null)
   const [number,setNumber]=useState(null)
   const [address,setAdress]=useState(null)
@@ -34,13 +35,14 @@ export default function Dashboard() {
 
  const handleSubmit=async(e)=>{
  e.preventDefault()
- console.log(name,email, number, address,unit)
- const doc= {name, email, number, address,unit} 
+ console.log(firstName, lastName, email, number, address,unit)
+ const doc= {firstName, lastName, email, number, address,unit} 
 alert('Member Detail Submitted')
  try{
- await projectFirestore.collection('membership').add(doc)
- alert('Member details submitted')
+// await projectFirestore.collection('membership').add(doc)
+ //alert('Member details submitted')
 
+await fireDbRef.child("members").push(doc)
  
 }catch(err){
   console.log(err)
@@ -151,8 +153,11 @@ alert('Member Detail Submitted')
                         <MemberModal>
                         <form onSubmit={handleSubmit}>
                           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1"  >
-                              <Form.Label>Name</Form.Label>
-                               <Form.Control type="text" onChange={(e)=>setName(e.target.value)}  placeholder="kindly input your name" />
+                              <Form.Label>First Name</Form.Label>
+                               <Form.Control type="text" onChange={(e)=>setFirstName(e.target.value)}  placeholder="Pls input your first name" />
+                               <Form.Label>Last Name</Form.Label>
+                               <Form.Control type="text" onChange={(e)=>setLastName(e.target.value)}  placeholder="Pls input your last name" />
+                              
                               
                                <br/>
                               
