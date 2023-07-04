@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/data-track-full-scale/static/css/main.00d4876e.css",
+    "main.js": "/data-track-full-scale/static/js/main.b291b06c.js",
+    "static/js/787.93df1837.chunk.js": "/data-track-full-scale/static/js/787.93df1837.chunk.js",
+    "static/media/app_1.png": "/data-track-full-scale/static/media/app_1.ead74fa0f6f962cefab4.png",
+    "static/media/login.png": "/data-track-full-scale/static/media/login.8cc4073964d269478ac8.png",
+    "static/media/Bg_2@2x.png": "/data-track-full-scale/static/media/Bg_2@2x.0bc0089cb9161f6c626b.png",
+    "static/media/members.png": "/data-track-full-scale/static/media/members.5b91ece2d64236677bb5.png",
+    "static/media/guest-list.png": "/data-track-full-scale/static/media/guest-list.82322d4d0b676ff104ba.png",
+    "static/media/bg_1@2x.png": "/data-track-full-scale/static/media/bg_1@2x.f3add50ff1a1973a87e9.png",
+    "static/media/spotify.svg": "/data-track-full-scale/static/media/spotify.5c3dc4ea36228cc99b745de6831d52cc.svg",
+    "static/media/amazon.svg": "/data-track-full-scale/static/media/amazon.810a60bd7af7afc6b111cf921d857844.svg",
+    "static/media/google.svg": "/data-track-full-scale/static/media/google.b4d55a4659259445368ee34d41606cc2.svg",
+    "static/media/slack.svg": "/data-track-full-scale/static/media/slack.628824312c7bb7e76bfcba924f895518.svg",
+    "static/media/paypal.svg": "/data-track-full-scale/static/media/paypal.99d11e8938977bf36649aed0791a8bb9.svg",
+    "static/media/samsung.svg": "/data-track-full-scale/static/media/samsung.23ef53647ed19a623a106a963aa9b35b.svg",
+    "static/media/logo-white.svg": "/data-track-full-scale/static/media/logo-white.bde037d484897f83719c96224a67fd4e.svg",
+    "static/media/instagram.svg": "/data-track-full-scale/static/media/instagram.3bf024c5b586f03983a52e30fdb8a279.svg",
+    "static/media/facebook.svg": "/data-track-full-scale/static/media/facebook.a198f7a6932e72ebb170cc9602e7b744.svg",
+    "static/media/android.svg": "/data-track-full-scale/static/media/android.1e72e9b3db6c55b73598e04fc6c2799e.svg",
+    "static/media/twitter.svg": "/data-track-full-scale/static/media/twitter.1f197b03f966387ebdadae1fd2037daa.svg",
+    "static/media/guest.svg": "/data-track-full-scale/static/media/guest.14495e0af67fc7729f002775ed9b2b57.svg",
+    "static/media/ios.svg": "/data-track-full-scale/static/media/ios.801833eb7ca4f3db6ebd78bd91c5e801.svg",
+    "static/media/youtube.svg": "/data-track-full-scale/static/media/youtube.72372d137bdce295e9166bd6abdf5fab.svg",
+    "index.html": "/data-track-full-scale/index.html",
+    "static/media/teams.svg": "/data-track-full-scale/static/media/teams.74e45542285d05b82736672a5f96dee1.svg",
+    "static/media/Footer_bg.svg": "/data-track-full-scale/static/media/Footer_bg.4e443b3e5ec88b53a917.svg",
+    "static/media/signout.svg": "/data-track-full-scale/static/media/signout.269056f737e86bd2f74790635d9aa18f.svg",
+    "static/media/plus-circle.svg": "/data-track-full-scale/static/media/plus-circle.e5881bbc61b5b879d0edd11d602ae5f9.svg",
+    "main.00d4876e.css.map": "/data-track-full-scale/static/css/main.00d4876e.css.map",
+    "main.b291b06c.js.map": "/data-track-full-scale/static/js/main.b291b06c.js.map",
+    "787.93df1837.chunk.js.map": "/data-track-full-scale/static/js/787.93df1837.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00d4876e.css",
+    "static/js/main.b291b06c.js"
+  ]
+}
