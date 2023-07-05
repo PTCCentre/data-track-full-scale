@@ -51,7 +51,11 @@ header label span{
     align-items: center;
     overflow-x: hidden;
 }
-.search-wrapper span{
+.search-wrapper form{
+    display: flex;
+    align-items: center;
+}
+.search-wrapper form span{
     display: inline-block;
     padding:0rem 1rem;
     font-size:1.5rem;
@@ -59,7 +63,7 @@ header label span{
 .sidebar-menu{
     margin-top:1rem;
 }
-.search-wrapper input{
+.search-wrapper form input{
     height:100%;
     padding: .5rem;
     border:none;
@@ -100,7 +104,7 @@ header label span{
     display: grid;
     grid-template-columns: repeat(4, 3fr);
     grid-gap:2rem;
-    margin-left:50%;
+    margin-left:18%;
 }
 .card-single{
     display: flex;
@@ -201,7 +205,9 @@ left:70px;
 }
 @media only screen and (max-width: 960px){
     .cards{
-        grid-template-columns: repeat(2,1fr)
+        grid-template-columns: repeat(2,1fr);
+        margin-left:50%;
+
     }
 
 }
@@ -210,6 +216,8 @@ left:70px;
 {
     .cards{
         grid-template-columns: 100%;
+        margin-left:50%;
+
     }
 
     .search-wrapper{
@@ -222,11 +230,12 @@ left:70px;
     .sidebar{
        width: 16%;
     }
-   .dashboar header h2{
+   .dashboard header h2{
         display: flex;
         align-items: center;
 
     }
+    
     .dashboard header h2 label{
 
           display: inline-block;

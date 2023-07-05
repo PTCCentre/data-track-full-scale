@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import logoWhite from '../assets/images/logo-white.svg'
 import iosImage from '../assets/images/ios.svg'
 import androidImage from '../assets/images/android.svg'
@@ -59,6 +59,9 @@ export default function Footer() {
                 <div className="col-md-3 mt-3 mt-md-0">
                     <nav>
                         <ul className="nav flex-column">
+                        <li className="nav-item">
+                                <Link to='/' className="nav-link">Home</Link>
+                            </li>
                             <li className="nav-item">
                                 <a href="#!" className="nav-link">About</a>
                             </li>

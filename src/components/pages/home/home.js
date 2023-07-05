@@ -1,5 +1,10 @@
 
 import React from 'react'
+import { useAuth } from '../portal/firebase-config'
+import { useState } from 'react'
+import { logout } from '../portal/firebase-config'
+import { useNavigate } from 'react-router-dom'
+
 import TopNav from '../../nav/TopNav'
 import { Link } from 'react-router-dom'
 import mobileApp from '../../assets/images/app_1.png'
@@ -12,9 +17,25 @@ import amazonImage from '../../assets/images/clients/amazon.svg'
 
 
 
-export default function Home() {
 
-  return (
+export default function Home() {
+const currentUser= useAuth()
+const [loading, setLoading]=useState(false)
+const navigate=useNavigate()
+
+async function handleLogout(){
+    setLoading(true)
+    try{
+    await logout()
+   }
+   catch {
+       alert('error!')
+   }
+   setLoading(false)
+
+   }
+
+return (
    
     <div> 
        <header className="foi-header landing-header">
@@ -23,10 +44,18 @@ export default function Home() {
                         <li className="nav-item mr-2 mb-3 mb-lg-0">
                             <Link className="btn btn-secondary" to="portal">Sign up</Link>
                         </li>
-                            
-                        <li className="nav-item">
-                            <Link className="btn btn-secondary" to="/portal">Login</Link>
-                        </li>
+                        {!currentUser &&(<li className="nav-item">
+                 <Link className="btn btn-secondary" to="portal" >Log in</Link>
+         </li>)}
+         {currentUser && (<li className="nav-item ">
+            <Link className="btn btn-secondary" to="#" onClick={handleLogout}>Log out </Link>
+    </li>)}
+    
+    {currentUser && (<li className="nav-item ">
+            <Link className="btn btn-secondary" to="/dashboard" >Dashboard</Link>
+    </li>)}
+    
+                        
        
        </TopNav>
        

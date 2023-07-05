@@ -24,11 +24,10 @@ export default function Portal() {
     }
         
     catch {
-          alert('error!')
+          alert('Oops! Please try again')
     }
     setLoading(false)
     navigate('/dashboard')
-
 }
 
    async function handleSignup(){
@@ -36,12 +35,10 @@ export default function Portal() {
        try{
           await signup(emailRef.current.value, passwordRef.current.value)
        }
-           
        catch {
-             alert('error!')
+             alert('Oops! Please try again')
        }
        setLoading(false)
-
    }
 
    async function handleLogout(){
@@ -50,9 +47,11 @@ export default function Portal() {
     await logout()
    }
    catch {
-       alert('error!')
+       alert('Oops! Please try again')
    }
    setLoading(false)
+   navigate('/portal')
+
    }
 
   return (
@@ -104,7 +103,7 @@ export default function Portal() {
                                         </div>
                                         <a href="#!" className="forgot-password-link">Forgot password?</a>
                                     </div>
-                                    <button onClick={handleLogin}  className="btn btn-primary btn-auth-submit" type="submit">Sign in</button>
+                                    <button disabled={loading}  onClick={handleLogin}  className="btn btn-primary btn-auth-submit" type="submit">Sign in</button>
                                 
                                 <p className="mb-0">
                                     <Link to="" onClick={()=>setLogin(false)} className="text-dark font-weight-bold">New User? Sign Up</Link>

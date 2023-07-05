@@ -1,3 +1,5 @@
+import firebase from 'firebase/compat/app';
+import "firebase/compat/database";
 import {useState, useEffect} from 'react'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -9,15 +11,13 @@ import '@firebase/firestore-compat'
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB2VuUk4VHX5KekR_2BgYYeaNiCs2BF3sM",
-  authDomain: "flight-speed-d21f3.firebaseapp.com",
-  projectId: "flight-speed-d21f3",
-  storageBucket: "flight-speed-d21f3.appspot.com",
-  messagingSenderId: "920307192082",
-  appId: "1:920307192082:web:a71b4e7a87f9b45c3da3cb",
-  measurementId: "G-E9NGXC91VS"
+  apiKey: "AIzaSyCsc2ET0FhO5JQcmIPXL5R99VnMN3iVfRc",
+  authDomain: "church-quest-b3d00.firebaseapp.com",
+  projectId: "church-quest-b3d00",
+  storageBucket: "church-quest-b3d00.appspot.com",
+  messagingSenderId: "209335426786",
+  appId: "1:209335426786:web:8d267ab316308655d308bb"
 };
-
 // Initialize Firebase  
 const app = initializeApp(firebaseConfig);
 const auth=getAuth();
@@ -48,3 +48,14 @@ export function useAuth(){
 
 	return currentUser;
 }
+
+// initialize Firebase
+const fireDb=firebase.initializeApp(firebaseConfig);
+
+//initializes services
+const projectFirestore=fireDb.firestore()
+const fireDbRef=fireDb.database().ref()
+export {projectFirestore, fireDbRef}
+
+
+
