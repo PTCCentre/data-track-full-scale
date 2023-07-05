@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ptccentre.github.io/data-track-full-scale/",
   "name": "theconnect",
+  "homepage": "https://ptccentre.github.io/data-track-full-scale/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -12,7 +12,6 @@ import { projectFirestore } from '../../portal/firebase-config';
 import { fireDbRef } from '../../portal/firebase-config';
 import {query, collection, where, getDocs, getCountFromServer } from "firebase/firestore";
 
-
 import { useLocation } from 'react-router-dom';
 export default function Search() {
 //  const searchQuery=queryParams.get('q')
@@ -121,11 +120,7 @@ export default function Search() {
                   </div>
                 </div>
            </div>
-      
           </main>
-
-   
-        
    </div>
       
        
