@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/data-track-full-scale/static/css/main.00d4876e.css",
-    "main.js": "/data-track-full-scale/static/js/main.b291b06c.js",
+    "main.js": "/data-track-full-scale/static/js/main.8839386a.js",
     "static/js/787.93df1837.chunk.js": "/data-track-full-scale/static/js/787.93df1837.chunk.js",
     "static/media/app_1.png": "/data-track-full-scale/static/media/app_1.ead74fa0f6f962cefab4.png",
     "static/media/login.png": "/data-track-full-scale/static/media/login.8cc4073964d269478ac8.png",
@@ -29,11 +29,11 @@
     "static/media/signout.svg": "/data-track-full-scale/static/media/signout.269056f737e86bd2f74790635d9aa18f.svg",
     "static/media/plus-circle.svg": "/data-track-full-scale/static/media/plus-circle.e5881bbc61b5b879d0edd11d602ae5f9.svg",
     "main.00d4876e.css.map": "/data-track-full-scale/static/css/main.00d4876e.css.map",
-    "main.b291b06c.js.map": "/data-track-full-scale/static/js/main.b291b06c.js.map",
+    "main.8839386a.js.map": "/data-track-full-scale/static/js/main.8839386a.js.map",
     "787.93df1837.chunk.js.map": "/data-track-full-scale/static/js/787.93df1837.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00d4876e.css",
-    "static/js/main.b291b06c.js"
+    "static/js/main.8839386a.js"
   ]
 }
