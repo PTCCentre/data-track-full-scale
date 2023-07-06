@@ -45,7 +45,7 @@ const [loading, setLoading]=useState(false);
             </li>
        
             <li>
-              <Link to="#"><span className='las la-users'></span> <span> Members</span></Link>
+              <Link to="/members"><span className='las la-users'></span> <span> Members</span></Link>
             </li>
             <li>
               <Link to='#'><span ><img src={teamImage} /></span> <span> Admin Mgt</span></Link>
