@@ -8338,6 +8338,7 @@ scroll-behavior: smooth; }
 
 .foi-header {
 padding-top: 24px; 
+margin:0;
 width: 100%; 
 }
 .foi-header .header-content {
