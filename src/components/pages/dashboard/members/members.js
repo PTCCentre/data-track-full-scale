@@ -141,6 +141,7 @@ export default function Members() {
       
                   </main>
             )}
+            <Footer/>
         </div>
       
   )

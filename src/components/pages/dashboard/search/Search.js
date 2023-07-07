@@ -124,6 +124,7 @@ export default function Search() {
                 </div>
            </div>
           </main>
+          <Footer/>
    </div>
       
        
