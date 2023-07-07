@@ -210,7 +210,6 @@ await fireDbRef.child("members").push(doc)
           
 
         </div>
-        <Footer/>
 
     </div>
   
