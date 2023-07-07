@@ -313,7 +313,10 @@ left:70px;
              margin-left: 0rem !important;
          }
           
-      
+        .dashboard .foi-footer{
+         width:130%;
+         padding-left:90px
+        }  
          
 }
 
@@ -334,9 +337,5 @@ left:70px;
            .user-wrapper{
             margin-left: -23%;
            }
-           .dashboard .foi-footer{
-            width:130%;
-            padding:90px
-           }  
 
 }
