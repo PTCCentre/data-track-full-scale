@@ -8337,11 +8337,14 @@ html {
 scroll-behavior: smooth; }
 
 .foi-header {
-padding-top: 24px; }
+padding-top: 24px; 
+width: 100%; 
+}
 .foi-header .header-content {
 padding-top: 105px;
 padding-left:60px;
-padding-bottom: 40px; }
+padding-bottom: 40px; 
+}
 .foi-header .header-content h1 {
   font-size: 45px;
   line-height: 1.22; }
