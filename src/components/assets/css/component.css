@@ -49,8 +49,12 @@ line-height: 1.15;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-display: block; }
+display: block;
 
+}
+.page-auth{
+    padding:15px;
+ }
 body {
 margin: 0;
 font-family: "DM Sans";
@@ -8288,11 +8292,14 @@ font-weight: 700;
 left: 1.5; }
 
 .form-actions-wrapper {
+  
 margin-bottom: 31px; }
 .form-actions-wrapper .form-check-input {
 margin-top: 0.6rem; }
 
 .form-check-label, .forgot-password-link {
+right:0;
+
 font-size: 14px;
 font-weight: 700;
 line-height: 2;

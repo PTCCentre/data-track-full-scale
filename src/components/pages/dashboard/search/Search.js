@@ -76,18 +76,20 @@ export default function Search() {
 
       <Dashnav/> 
       <div className='main-content'>
-              <header>
-              <div> <h3>
+      <header >
+              <div > <h3>
                 <label for='nav-toggle'><span className='las la-bars'> </span></label>  
-                  Dashboard
+                 <span className='dashboard-text'> </span>
                 </h3>    
                  </div>
 
-              <Searchbar/>
+               
+                <Searchbar />
+
                 <div className='user-wrapper'>
                   <img src='https://developers.tech2biz.net/images/frontend/default-user-male.png' width='40px' height='40px' alt=''/>
                   <div>
-
+               
                   <p style={{fontSize:'9px'}}>{ currentUser ?.email}</p>
                 <small>Super Admin</small>
                   </div>

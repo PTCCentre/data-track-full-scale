@@ -59,21 +59,21 @@ await fireDbRef.child("members").push(doc)
       <input type="checkbox" id="nav-toggle" />
     <Dashnav/>
 
-    <div className='main-content'>
-              <header>
-              <div> <h3>
+    <div className=' main-content'>
+              <header >
+              <div > <h3>
                 <label for='nav-toggle'><span className='las la-bars'> </span></label>  
-                  Dashboard
+                 <span className='dashboard-text'> </span>
                 </h3>    
                  </div>
 
-              
-                <Searchbar/>
+               
+                <Searchbar />
 
                 <div className='user-wrapper'>
                   <img src='https://developers.tech2biz.net/images/frontend/default-user-male.png' width='40px' height='40px' alt=''/>
                   <div>
-
+               
                   <p style={{fontSize:'9px'}}>{ currentUser ?.email}</p>
                 <small>Super Admin</small>
                   </div>
@@ -81,7 +81,7 @@ await fireDbRef.child("members").push(doc)
                
               </header>
 
-              <main className='main'>
+              <main className='container main'>
                   <div className='cards'>
                   
                     <div className='card-single'>

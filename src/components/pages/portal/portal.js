@@ -74,7 +74,7 @@ export default function Portal() {
     
    </TopNav>
  
-{login &&(<main className="page-auth">
+{login &&(<main className="container page-auth">
         <div className="container">
             <div className="row">
                 <div className="col-lg-10 offset-lg-1">
@@ -121,7 +121,7 @@ export default function Portal() {
 
     
 
-    {!login &&(<main className="page-auth">
+    {!login &&(<main className="container page-auth ">
         <div className="container">
             <div className="row">
                 <div className="col-lg-10 offset-lg-1">

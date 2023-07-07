@@ -63,7 +63,6 @@ export default function Members() {
               <header>
               <div> <h3>
                 <label for='nav-toggle'><span className='las la-bars'> </span></label>  
-                  Dashboard
                 </h3>    
                  </div>
 
