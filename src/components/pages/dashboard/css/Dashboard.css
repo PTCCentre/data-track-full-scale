@@ -105,7 +105,7 @@ header label span{
     display: grid;
     grid-template-columns: repeat(4, 3fr);
     grid-gap:2rem;
-    margin-left:18%;
+    padding-left:18%;
 }
 .card-single{
     display: flex;
