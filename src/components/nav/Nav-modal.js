@@ -44,6 +44,7 @@ export default function NavModal({children}) {
                         <li  className="nav-item">
                             <Link style={{color:'black'}}  className="nav-link" to="#">About</Link>
                         </li>
+                        
                         <li className="nav-item">
                             <Link style={{color:'black'}}  className="nav-link" to="#">Features</Link>
                         </li>
