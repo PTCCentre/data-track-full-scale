@@ -8240,7 +8240,9 @@ padding-bottom: 110px;
 background-color: #ffffff;
 background-image: url(../images/Footer_bg.svg);
 background-repeat: no-repeat;
-background-size: cover; }
+background-size: cover; 
+width: 110%;
+}
 .foi-footer .footer-content {
 padding-bottom: 34px;
 border-bottom: 1px solid rgba(240, 240, 240, 0.39); }
@@ -8338,8 +8340,8 @@ scroll-behavior: smooth; }
 
 .foi-header {
 padding-top: 24px; 
-margin-left: -0.1px;
-width: 100%;
+margin-left: -10px;
+width: 110%;
 
 
 }
