@@ -4,7 +4,7 @@ import './css/Dashboard.css'
 import { Link, useNavigate } from 'react-router-dom'
 import {fireDbRef, useAuth} from '../portal/firebase-config'
 import { projectFirestore } from '../portal/firebase-config'
-
+import Footer from '../../nav/Footer'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -210,7 +210,8 @@ await fireDbRef.child("members").push(doc)
           
 
         </div>
-         
+        <Footer/>
+
     </div>
   
   )

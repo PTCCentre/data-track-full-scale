@@ -15,6 +15,7 @@ import signoutImage from '../../../assets/images/signout.svg'
 
 import handleLogout from '../Dashnav'
 import Searchbar from '../Searchbar'
+import Footer from '../../../nav/Footer'
 export default function Members() {
     const [error, setError]=useState(false)
     const [loading, setLoading]=useState(false)
@@ -140,6 +141,7 @@ export default function Members() {
       
                   </main>
             )}
+            <Footer/>
         </div>
       
   )

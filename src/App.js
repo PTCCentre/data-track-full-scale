@@ -18,7 +18,6 @@ export default function App() {
       <Route path="members" element={<Members/>}/>
       <Route path="search" element={<Search/>}/>
     </Routes>
-    <Footer/>
     </div>
   )
 }

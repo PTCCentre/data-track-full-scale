@@ -4,7 +4,7 @@ import { useAuth } from '../portal/firebase-config'
 import { useState } from 'react'
 import { logout } from '../portal/firebase-config'
 import { useNavigate } from 'react-router-dom'
-
+import Footer from '../../nav/Footer'
 import TopNav from '../../nav/TopNav'
 import { Link } from 'react-router-dom'
 import mobileApp from '../../assets/images/app_1.png'
@@ -195,7 +195,9 @@ return (
             </div>
       </div>
     </section>
-    
+
+    <Footer/>
+
     </div>
   )
 }

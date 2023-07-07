@@ -3,6 +3,7 @@ import {signup, signin, logout , useAuth} from "./firebase-config"
 import { useNavigate} from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import loginImage from '../../assets/images/login.png'
+import Footer from '../../nav/Footer'
 import TopNav from '../../nav/TopNav'
 export default function Portal() {
     const navigate=useNavigate()
@@ -161,6 +162,8 @@ export default function Portal() {
             </div>
         </div>
     </main>)}
+    <Footer/>
+
  </div>
   )
 }

@@ -13,6 +13,7 @@ import { fireDbRef } from '../../portal/firebase-config';
 import {query, collection, where, getDocs, getCountFromServer } from "firebase/firestore";
 
 import { useLocation } from 'react-router-dom';
+import Footer from '../../../nav/Footer';
 export default function Search() {
 //  const searchQuery=queryParams.get('q')
   //const q=query(collection(projectFirestore,"recipes"), where ("name", "==", query))
@@ -123,6 +124,7 @@ export default function Search() {
                 </div>
            </div>
           </main>
+          <Footer/>
    </div>
       
        
