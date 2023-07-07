@@ -8338,12 +8338,16 @@ scroll-behavior: smooth; }
 
 .foi-header {
 padding-top: 24px; 
-width: 100%; 
+margin-left: -0.1px;
+width: 100%;
+
+
 }
 .foi-header .header-content {
 padding-top: 105px;
 padding-left:60px;
 padding-bottom: 40px; 
+width:100%
 }
 .foi-header .header-content h1 {
   font-size: 45px;
