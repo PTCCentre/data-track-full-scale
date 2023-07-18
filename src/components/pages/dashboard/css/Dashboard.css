@@ -45,9 +45,11 @@ header label span{
 .search-wrapper{
     border:1px solid #ccc;
     border-radius:30px;
+    font-size:11px;
     height:50px;
-    width: 40%;
+    width: 35%;
     display: flex;
+    text-align: center;
     align-items: center;
     overflow-x: hidden;
 }
@@ -74,7 +76,7 @@ header label span{
     display: flex;
     width:15%;
     align-items: center;
-    margin-right:10%;
+    margin-right:3%;
 
 }
 .user-wrapper img{
@@ -156,7 +158,7 @@ header{
 
 }
 .user-wrapper{
-    margin-right: 20%;
+    margin-right: 14%;
 }
 
  .sidebar .sidebar-brand ,
@@ -229,7 +231,7 @@ left:70px;
         margin-right:3%
     }
     .user-wrapper{
-        margin-right:30%;
+        margin-right:18%;
     }
     .sidebar{
        width: 16%;
@@ -282,7 +284,7 @@ left:70px;
          }
            
      #nav-toggle:checked ~ .main-content header  .user-wrapper{
-        margin-right:44%;
+        margin-right:46%;
     }
 
            
@@ -317,7 +319,6 @@ left:70px;
          width:130%;
          padding-left:90px
         }  
-         
 }
 
 @media only screen and (max-width: 560px){

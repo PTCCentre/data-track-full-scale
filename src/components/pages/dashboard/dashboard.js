@@ -57,7 +57,7 @@ await fireDbRef.child("members").push(doc)
     <div className='dashboard'>
       
       <input type="checkbox" id="nav-toggle" />
-    <Dashnav/>
+    <Dashnav/> 
 
     <div className=' main-content'>
               <header >
