@@ -115,7 +115,7 @@ export default function Members() {
                     <div>
                       <h3>100</h3>
                        <span>Total retained</span><br/>
-                  </div>      
+                  </div>
                   <div>
                     <span  className='member-icon'  > <Link to="#"><img src={membersImage} height='50px'/> </Link></span>
                   </div>

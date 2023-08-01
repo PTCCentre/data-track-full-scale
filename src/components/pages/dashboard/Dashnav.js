@@ -8,7 +8,7 @@ import guest from '../../assets/images/guest.svg'
 import signoutImage from '../../assets/images/signout.svg'
 export default function Dashnav(handleLogout) {
 const currentUser=useAuth();
-const navigate=useNavigate()
+const navigate=useNavigate();
 const [loading, setLoading]=useState(false);
    
 
@@ -37,16 +37,18 @@ const [loading, setLoading]=useState(false);
         <div className='sidebar-menu'> 
            <ul>
             <li>
-              <Link to="#" className='active'> <span className='las la-igloo'></span> <span>Dashboard</span></Link>
+              <Link to="/dashboard" className='active'> <span className='las la-igloo'></span> <span>Dashboard</span></Link>
             </li>
            
             <li>
-              <Link to="#"><span className='las la-user-plus '></span> <span>Register</span></Link>
+              <Link to="/guests"><span className='las la-user-plus '></span> <span>Register</span></Link>
             </li>
        
             <li>
               <Link to="/members"><span className='las la-users'></span> <span> Members</span></Link>
             </li>
+
+            
             <li>
               <Link to='#'><span ><img src={teamImage} /></span> <span> Admin Mgt</span></Link>
             </li>
@@ -60,6 +62,4 @@ const [loading, setLoading]=useState(false);
 
       </div>
       
-    
-  
   )}

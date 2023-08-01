@@ -17,18 +17,26 @@ import MemberModal from './Member-modal'
 import Searchbar from './Searchbar'
 
 export default function Dashboard() {
+  const guest="guest"
+  const retained="retained"
+
   const[firstName,setFirstName]=useState(null)
   const[lastName,setLastName]=useState(null)
   const[email , setEmail]=useState(null)
   const [number,setNumber]=useState(null)
   const [address,setAdress]=useState(null)
+  const [status, setStatus]=useState(null)
+  const [ageGroup, setAgeGroup]=useState(null)
+  const [consider, setConsider]=useState(null)
   const [unit,setUnit]=useState(null)
   const [occupation,setOccupation]=useState(null)
 
   const [error, setError]=useState(false)
   const [loading, setLoading]=useState(false)
   const [details,setDetails]=useState(null)
-  const currentUser=useAuth()
+  const [invitee,setInvitee]=useState(null)
+  const [likes, setLikes]=useState(null)
+    const currentUser=useAuth()
   const navigate=useNavigate()
 
 
@@ -37,16 +45,34 @@ export default function Dashboard() {
  e.preventDefault()
  console.log(firstName, lastName, email, number, address,unit)
  const doc= {firstName, lastName, email, number, address,unit} 
-alert('Member Detail Submitted')
+ alert('Member Detail Submitted')
  try{
-// await projectFirestore.collection('membership').add(doc)
+  // await projectFirestore.collection('membership').add(doc)
  //alert('Member details submitted')
-
+ 
 await fireDbRef.child("members").push(doc)
+
  
 }catch(err){
   console.log(err)
 }
+}
+
+const submitGuest=async(e)=>{
+  e.preventDefault()
+  console.log(guest, firstName, number, email, address, status, ageGroup)
+  const doc={guest, firstName, number, email, address, status, ageGroup}
+  alert('Thanks for your time, detils submitted!')
+
+  try{
+  
+    await fireDbRef.child("members").push(doc)
+
+  }
+  catch (err){
+    console.log(err)
+  }
+  
 }
 
 
@@ -80,6 +106,8 @@ await fireDbRef.child("members").push(doc)
                 </div>
                
               </header>
+ 	     
+
 
               <main className='container main'>
                   <div className='cards'>
@@ -89,28 +117,28 @@ await fireDbRef.child("members").push(doc)
                         <h1>54</h1>
                         <span>Guest</span><br/>
                         <MemberModal>
-                        <Form>
+                        <Form onSubmit={submitGuest} >
                           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                               <Form.Control type="text"  placeholder="Kindly input your name" />
+                               <Form.Control type="text" onChange={(e)=>setFirstName(e.target.value)} placeholder="Kindly input your name" />
                               <br/>
-                               <Form.Control type="number"  placeholder="Your phone number" />
+                               <Form.Control type="number" onChange={(e)=>setNumber(e.target.value)} placeholder="Your phone number" />
                                <br/>
-                               <Form.Control type="email"  placeholder="name@example.com" />
+                               <Form.Control type="email" onChange={(e)=>setEmail(e.target.value)}  placeholder="name@example.com" />
                                <br/>
-                               <Form.Control type="text"  placeholder="Address" />
+                               <Form.Control type="text" onChange={(e)=>setAdress(e.target.value)}  placeholder="Address" />
                                  <br/>
-                               <Form.Control type="text" placeholder='Single / Married / Diversed'  />
+                               <Form.Control type="text" onChange={(e)=>setStatus(e.target.value)} placeholder='Single / Married / Diversed'  />
                                   <br/>
-                               <Form.Control type="text" placeholder='kindly input your age group'  />
+                               <Form.Control type="text" onChange={(e)=>setAgeGroup(e.target.value)} placeholder='kindly input your age group'  />
                                    <br/>
-                                <Form.Control type="text" placeholder='would like to be a part of our church?'  />
+                                <Form.Control type="text" onChange={(e)=>setConsider(e.target.value)} placeholder='would like to be a part of our church?'  />
                                 <br/>
-                              <Form.Control type="text" placeholder='Who invited you?'  />
+                              <Form.Control type="text" onChange={(e)=>setInvitee(e.target.value)} placeholder='Who invited you?'  />
                               <br/>
                             <Form.Label>What you like about our church?</Form.Label>
-                              <Form.Control as="textarea" rows={3} />
+                              <Form.Control as="textarea" onChange={(e)=>setLikes(e.target.value)} rows={3} />
                            </Form.Group>
-                           <Button variant="primary"> Submit Detail </Button>
+                           <Button type='submit' variant="primary"> Submit Detail </Button>
                            
                         </Form>
                         </MemberModal>
@@ -135,7 +163,7 @@ await fireDbRef.child("members").push(doc)
                             <Form.Label>Example textarea</Form.Label>
                               <Form.Control as="textarea" rows={3} />
                            </Form.Group>
-                           <Button variant="primary"> Submit Detail </Button>
+                           <Button type='submit' variant="primary"> Submit Detail </Button>
 
                         </Form>
                         </MemberModal>

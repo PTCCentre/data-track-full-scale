@@ -7,6 +7,7 @@ import Footer from './components/nav/Footer';
 import Dashboard from './components/pages/dashboard/dashboard';
 import Members from './components/pages/dashboard/members/members';
 import Search from './components/pages/dashboard/search/Search'
+import Guest from './components/pages/dashboard/guests/guests';
 export default function App() {
 
   return (
@@ -17,6 +18,8 @@ export default function App() {
       <Route path="dashboard" element={<Dashboard/>}/>
       <Route path="members" element={<Members/>}/>
       <Route path="search" element={<Search/>}/>
+      <Route path="guests" element={<Guest/>}/>
+
     </Routes>
     </div>
   )
