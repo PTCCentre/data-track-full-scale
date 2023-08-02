@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logoWhite from '../assets/images/logo-white.svg'
+import ptcc from '../assets/images/ptcc.png'
 import iosImage from '../assets/images/ios.svg'
 import androidImage from '../assets/images/android.svg'
 import facebookImage from '../assets/images/facebook.svg'
@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="row footer-widget-area">
                 <div className="col-md-3">
                     <div className="py-3">
-                        <img src={logoWhite} alt="FOI"/>
+                        <img src={ptcc} alt="FOI"/>
                     </div>
 
                     <p className="font-os font-weight-semibold mb3">Get our mobile app</p>

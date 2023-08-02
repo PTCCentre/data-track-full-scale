@@ -30,10 +30,11 @@ const [loading, setLoading]=useState(false);
       <div className='sidebar'>
 
         <div className='sidebar-brand' style={{textAlign:'center'}}>
-          <h4><img src='https://famousclowns.org/wp-content/uploads/2017/11/helmet-of-salvation.png' style={{width:'35px'}}/>
-                <span> Church <br/> Quest</span></h4>
+          <h4><img src='https://ptccentre.org/wp-content/uploads/2020/01/web-logo-1.png' style={{width:'55px'}}/>
+                <span>Potters Transformation  Christian Center</span></h4>
         </div>
-        <br/>     <br/>
+        <br/>     <br/>        <br/>
+
         <div className='sidebar-menu'> 
            <ul>
             <li>

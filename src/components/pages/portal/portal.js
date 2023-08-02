@@ -129,7 +129,7 @@ export default function Portal() {
                     <section className="auth-wrapper">
                         <div className="row">
                             <div className="col-md-6 mb-4 mb-md-0">
-                                <h2 className="auth-section-title">Create a church account</h2>
+                                <h2 className="auth-section-title">Create your account</h2>
                                 <p className="auth-section-subtitle">Create your account to continue.</p>
 
                                 <br/>

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import Footer from '../../nav/Footer'
 import TopNav from '../../nav/TopNav'
 import { Link } from 'react-router-dom'
-import mobileApp from '../../assets/images/app_1.png'
+
 import slackImage from '../../assets/images/clients/slack.svg'
 import spotifyImage from '../../assets/images/clients/spotify.svg'
 import paypalImage from '../../assets/images/clients/paypal.svg'
@@ -63,7 +63,7 @@ return (
        <div className="header-content">
                 <div className="row">
                     <div className="col-md-6">
-                        <h2>Welcome to ChurchQuest</h2>
+                        <h2> Potters Transformation Christian Centre</h2>
                         <p className="text-dark">Great app that makes 
                         your church administration feassible & easy 
                           </p>
@@ -92,22 +92,22 @@ return (
       
     <section className="py-5 mb-5">
     <div className="container">
-            <h2 className="section-title">Why ChurchQuest?</h2><br/>
+            <h2 className="section-title">Our goal on this platform?</h2><br/>
             <div className="row">
                 <div className="col-lg-4 mb-4 mb-lg-0">
-                    <h5>The <b>Database Management</b> for your church members </h5>
+                    <h5>The <b>Best Database </b> for our church members </h5>
                     <p className="text-dark">No matter what kind of home you have to share, you can increase your earnings.</p>
                     <p className="mb-5"><a href="#!" class="text-primary mb-5">Find out More</a></p>
-                    <h5>Evangelism Aid</h5>
+                    <h5>Gospel Aid</h5>
                     <p className="text-dark">No matter what kind of home you have to share, you can increase your earnings.</p>
                     <p className="mb-5"><a href="#!" class="text-primary mb-5">Find out More</a></p>
                 
-                    <h5>Church Events-Planning </h5>
+                    <h5>Effective Planning </h5>
                     <p className="text-dark">No matter what kind of home you have to share, you can increase your earnings.</p>
                     <p className="mb-5"><a href="#!" class="text-primary mb-5">Find out More</a></p>
                 </div>
                 <div className="col-lg-4 mb-3 mb-lg-0">
-                    <h5>First-Timer Followup</h5>
+                    <h5>Events management</h5>
                     <p className="text-dark">No matter what kind of home you have to share, you can increase your earnings.</p>
                     <p className="mb-5"><a href="#!" class="text-primary mb-5">Find out More</a></p>
                     <h5>Project Management</h5>
