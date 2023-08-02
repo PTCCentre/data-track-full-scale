@@ -63,7 +63,7 @@ return (
        <div className="header-content">
                 <div className="row">
                     <div className="col-md-6">
-                        <h2> Potters Transformation Christian Centre</h2>
+                        <h2> Potters Transformation <br/>Christian Centre</h2>
                         <p className="text-dark">Great app that makes 
                         your church administration feassible & easy 
                           </p>
